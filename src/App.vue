@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <app-header />
+    <app-header/>
     <app-navigation/>
-    <router-view/>
+    <app-content/>
     <app-footer/>
   </div>
 </template>
@@ -12,6 +12,7 @@ import AOS from 'aos'
 import '@/assets/scss/normalize.scss'
 
 const AppNavigation = () => import('@/components/AppNavigation')
+const AppContent = () => import('@/components/AppContent')
 const AppHeader = () => import('@/components/AppHeader')
 const AppFooter = () => import('@/components/AppFooter')
 
@@ -19,6 +20,7 @@ export default {
   name: 'App',
   components: {
     AppNavigation,
+    AppContent,
     AppHeader,
     AppFooter,
   },
