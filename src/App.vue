@@ -1,15 +1,26 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <app-header/>
+    <app-navigation/>
     <router-view/>
+    <app-footer/>
   </div>
 </template>
 
 <script>
 import '@/assets/scss/normalize.scss'
 
+const AppNavigation = () => import('@/components/AppNavigation')
+const AppHeader = () => import('@/components/AppHeader')
+const AppFooter = () => import('@/components/AppFooter')
+
 export default {
   name: 'App',
+  components: {
+    AppNavigation,
+    AppHeader,
+    AppFooter,
+  },
 }
 </script>
 
