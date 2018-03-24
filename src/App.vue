@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <app-header/>
     <router-view/>
   </div>
 </template>
@@ -8,8 +8,13 @@
 <script>
 import '@/assets/scss/normalize.scss'
 
+const AppHeader = () => import('@/components/AppHeader')
+
 export default {
   name: 'App',
+  components: {
+    AppHeader,
+  },
 }
 </script>
 
