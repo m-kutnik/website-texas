@@ -37,7 +37,7 @@ export default {
 
 <style lang="scss">
 html {
-  background: #000;
+  background: #292c30;
 }
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
