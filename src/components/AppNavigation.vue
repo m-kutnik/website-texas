@@ -1,12 +1,13 @@
 <template>
   <nav>
     <ul>
-      <li>Strona główna</li>
-      <li>Imprezy</li>
-      <li>Menu</li>
-      <li>O nas</li>
-      <li>Lokalizacja</li>
-      <li>Kontakt</li>
+      <router-link
+        v-for="route in routes"
+        :key="route.name"
+        :to="route.path"
+        tag="li">
+        <a>{{ route.name }}</a>
+      </router-link>
     </ul>
   </nav>
 </template>
@@ -14,5 +15,10 @@
 <script>
 export default {
   name: 'AppNavigation',
+  computed: {
+    routes() {
+      return this.$router.options.routes
+    },
+  },
 }
 </script>
