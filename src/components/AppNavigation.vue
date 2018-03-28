@@ -17,10 +17,10 @@
       class="drag">
       <div
         :class="{ 'hamburger--active': sidebar }"
-        @click="toggleMenu()"
+        class="hamburger"
         title="Show / Hide menu"
-        class="hamburger">
-        <div class="hamburger__inner"></div>
+        @click="toggleMenu()">
+        <div class="hamburger__inner" />
       </div>
     </div>
   </nav>
