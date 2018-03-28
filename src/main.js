@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import { VueHammer } from 'vue2-hammer'
 import App from './App'
 import router from './router'
 
@@ -16,6 +17,8 @@ if (process.env.NODE_ENV === 'production') {
     },
   })
 }
+
+Vue.use(VueHammer)
 
 Vue.config.productionTip = false
 

@@ -7,6 +7,9 @@
 @mixin for-tablet-landscape-up {
   @media (min-width: 900px) { @content; }
 }
+@mixin desktop-down {
+  @media (max-width: 1199px) { @content; }
+}
 @mixin for-desktop-up {
   @media (min-width: 1200px) { @content; }
 }

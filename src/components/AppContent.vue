@@ -1,6 +1,8 @@
 <template>
   <section>
-    <router-view/>
+    <transition name="fade">
+      <router-view/>
+    </transition>
   </section>
 </template>
 
@@ -23,6 +25,20 @@ section {
     position: relative;
     overflow: auto;
   }
+}
+
+@include desktop-down {
+  section {
+    margin-top:60px;
+  }
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+  will-change: opacity;
+}
+.fade-enter, .fade-leave-to  {
+  opacity: 0;
 }
 </style>
 

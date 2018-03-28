@@ -24,5 +24,11 @@ header {
     grid-area: head;
   }
 }
+@include desktop-down {
+  header {
+    display: none;
+    opacity: 0;
+  }
+}
 </style>
 
