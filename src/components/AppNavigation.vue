@@ -125,11 +125,11 @@ li a:hover {
     .hamburger {
       display: block;
       position: absolute;
-      width: $hamburger__width;
-      height: $hamburger__height;
+      width: $hamburger__width + 10;
+      height: $hamburger__height + 20;
       z-index: 2;
       top: 13px;
-      right: 20px;
+      right: 5px;
       cursor: pointer;
     }
 
