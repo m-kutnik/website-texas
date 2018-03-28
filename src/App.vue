@@ -36,21 +36,22 @@ export default {
 </script>
 
 <style lang="scss">
+html {
+  background: #000;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
 }
 
 // AOS
 [data-aos][data-aos][data-aos-duration="400"],body[data-aos-duration="400"] [data-aos] {
-    transition-duration: 400ms
+    transition-duration: 400ms;
 }
 [data-aos][data-aos][data-aos-easing=ease-in-out],body[data-aos-easing=ease-in-out] [data-aos] {
-    transition-timing-function: ease-in-out
+    transition-timing-function: ease-in-out;
 }
 [data-aos^=fade][data-aos^=fade] {
     opacity: 0;
@@ -60,10 +61,10 @@ export default {
 
 [data-aos^=fade][data-aos^=fade].aos-animate {
     opacity: 1;
-    transform: translate(0)
+    transform: translate(0);
 }
 
 [data-aos=fade-up] {
-    transform: translateY(50px)
+    transform: translateY(50px);
 }
 </style>
