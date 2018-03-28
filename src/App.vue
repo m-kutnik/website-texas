@@ -9,6 +9,7 @@
 
 <script>
 import AOS from 'aos'
+import WebFont from 'webfontloader'
 import '@/assets/scss/normalize.scss'
 
 const AppNavigation = () => import('@/components/AppNavigation')
@@ -31,19 +32,41 @@ export default {
       easing: 'ease-in-out',
       once: true,
     })
+    WebFont.load({
+      google: {
+        families: ['Bitter:latin-ext', 'Roboto:latin-ext'],
+      },
+    })
   },
 }
 </script>
 
 <style lang="scss">
+@import '/assets/scss/mixins.scss';
+
 html {
   background: #292c30;
+  color: rgba(255,255,255,0.8);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bitter', serif;
 }
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'Roboto', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin-top: 60px;
+  display: block;
+
+  @include for-desktop-up {
+    display: grid;
+    grid-template:
+            "head content"
+            "nav  content"
+            "foot content";
+    grid-template-columns: 350px 1fr;
+    grid-template-rows: auto auto 1fr;
+    height: 100vh;
+  }
 }
 
 // AOS
