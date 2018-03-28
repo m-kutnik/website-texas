@@ -1,0 +1,2 @@
+webpackJsonp([2],{DJqw:function(e,t){},"OC/o":function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r={render:function(){this.$createElement;this._self._c;return this._m(0)},staticRenderFns:[function(){var e=this.$createElement,t=this._self._c||e;return t("footer",[t("span",[this._v("Footer")])])}]};var o=n("VU/8")({name:"AppFooter"},r,!1,function(e){n("DJqw")},"data-v-70d04add",null);t.default=o.exports}});
+//# sourceMappingURL=2.7f67f47baa194a32f9ae.js.map

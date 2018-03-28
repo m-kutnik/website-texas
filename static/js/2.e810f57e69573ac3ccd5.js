@@ -1,2 +1,0 @@
-webpackJsonp([2],{"OC/o":function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var r={render:function(){this.$createElement;this._self._c;return this._m(0)},staticRenderFns:[function(){var e=this.$createElement,t=this._self._c||e;return t("footer",[t("span",[this._v("Footer")])])}]},s=n("VU/8")({name:"AppNavigation"},r,!1,null,null,null);t.default=s.exports}});
-//# sourceMappingURL=2.e810f57e69573ac3ccd5.js.map
