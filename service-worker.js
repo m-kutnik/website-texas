@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.2.0/workbox-sw.js");
 
 importScripts(
-  "./precache-manifest.b6e4fb744a2186952ca96cda78bcf258.js"
+  "./precache-manifest.0c3f385863a3178ffc8398f4b4097f19.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "website-texas"});
