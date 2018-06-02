@@ -16,7 +16,8 @@ export default {
 @import "../assets/scss/mixins.scss";
 
 section {
-  background: #313539;
+  background: #fff;
+  color: #000;
 }
 
 @include for-desktop-up {
@@ -24,6 +25,7 @@ section {
     grid-area: content;
     position: relative;
     overflow: auto;
+    box-shadow: inset 22px 0px 18px -22px rgba(0,0,0,0.75);
   }
 }
 
