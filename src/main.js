@@ -1,30 +1,13 @@
-import Vue from 'vue'
-import { VueHammer } from 'vue2-hammer'
-import App from './App'
-import router from './router'
+import Vue from "vue";
+import App from "./App.vue";
+import router from "./router";
+import store from "./store";
+import "./registerServiceWorker";
 
-// Offline support
-if (process.env.NODE_ENV === 'production') {
-  /* eslint-disable global-require */
-  const runtime = require('offline-plugin/runtime')
+Vue.config.productionTip = false;
 
-  runtime.install({
-    onUpdateReady() {
-      runtime.applyUpdate()
-    },
-    onUpdated() {
-      window.location.reload()
-    },
-  })
-}
-
-Vue.use(VueHammer)
-
-Vue.config.productionTip = false
-
-/* eslint-disable no-new */
 new Vue({
-  el: '#app',
   router,
-  render: (h) => h(App),
-})
+  store,
+  render: h => h(App)
+}).$mount("#app");

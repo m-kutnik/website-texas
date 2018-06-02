@@ -2,11 +2,13 @@ language: node_js
 node_js:
   - "node"
 cache:
+  yarn: true
   directories:
   - node_modules
+install:
+  - yarn install --ignore-engines
 script:
-  - npm test
-  - npm run build-travis
+  - yarn build
 deploy:
   provider: pages
   skip-cleanup: true
