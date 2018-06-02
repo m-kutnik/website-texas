@@ -34,7 +34,7 @@ export default {
     })
     WebFont.load({
       google: {
-        families: ["Bitter:latin-ext", "Roboto:latin-ext"],
+        families: ["Bitter", "Roboto"],
       },
     })
   },
@@ -48,6 +48,7 @@ html {
   background: #292c30;
   color: rgba(255, 255, 255, 0.8);
 }
+
 h1,
 h2,
 h3,
@@ -57,7 +58,7 @@ h6 {
   font-family: "Bitter", serif;
 }
 #app {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: block;
