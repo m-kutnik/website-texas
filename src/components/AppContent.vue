@@ -25,7 +25,7 @@ section {
     grid-area: content;
     position: relative;
     overflow: auto;
-    box-shadow: inset 22px 0px 18px -22px rgba(0,0,0,0.75);
+    box-shadow: inset 22px 0px 18px -22px rgba(0, 0, 0, 0.75);
   }
 }
 
