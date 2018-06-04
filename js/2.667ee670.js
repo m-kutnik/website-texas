@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([[2],{"2u3S":function(n,t,e){"use strict";var a=e("dfV+"),o=e.n(a);o.a},Svoe:function(n,t,e){"use strict";e.r(t);var a=function(){var n=this,t=n.$createElement,e=n._self._c||t;return e("section",[e("transition",{attrs:{name:"fade"}},[e("router-view")],1)],1)},o=[],r=(e("VRzm"),{name:"AppContent"}),u=r,i=(e("2u3S"),e("KHd+")),s=Object(i["a"])(u,a,o,!1,null,"3b24e7f9",null);t["default"]=s.exports},"dfV+":function(n,t,e){}}]);
-//# sourceMappingURL=2.667ee670.js.map
