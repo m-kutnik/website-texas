@@ -1,6 +1,6 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
+  <div class="home">
+    <h1>This is an menu page</h1>
     <h2>Test2</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur delectus minima mollitia, beatae, officiis eum neque harum in impedit officia odit cupiditate minus maiores ipsam deserunt a eaque, velit dolores?</p>
     <p>
@@ -29,7 +29,7 @@
 </template>
 
 <style lang="scss" scoped>
-.about {
+.menu {
   padding: 50px 10px;
 }
 </style>
