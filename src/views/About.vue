@@ -27,3 +27,9 @@
     </p>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.about {
+  padding: 50px 10px;
+}
+</style>
