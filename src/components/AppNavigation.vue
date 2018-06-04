@@ -15,6 +15,9 @@
     <div
       v-hammer:pan="onSwipe"
       class="drag">
+      <div>
+        <img src="@/assets/logo2.png" class="logo">
+      </div>
       <div
         :class="{ 'hamburger--active': sidebar }"
         class="hamburger"
@@ -90,6 +93,9 @@ li a:hover {
   nav {
     grid-area: nav;
   }
+  .logo {
+    display: none;
+  }
 }
 @include desktop-down {
   nav {
@@ -116,6 +122,14 @@ li a:hover {
       bottom: 0;
       height: 60px;
       width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .logo {
+      height: 45px;
+      margin-top: 5px;
+      display: block;
     }
 
     $hamburger__height: 30px;
