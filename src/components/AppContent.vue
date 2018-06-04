@@ -1,6 +1,6 @@
 <template>
   <section>
-    <transition name="fade">
+    <transition name="fade2">
       <router-view/>
     </transition>
   </section>
@@ -25,7 +25,7 @@ section {
     grid-area: content;
     position: relative;
     overflow: auto;
-    box-shadow: inset 22px 0px 18px -22px rgba(0,0,0,0.75);
+    box-shadow: inset 22px 0px 18px -22px rgba(0, 0, 0, 0.75);
   }
 }
 
@@ -35,13 +35,20 @@ section {
   }
 }
 
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
-  will-change: opacity;
+.fade2-enter-active,
+.fade2-leave-active {
+  transition-property: opacity;
+  transition-duration: 0.25s;
+  will-change: transform;
 }
-.fade-enter,
-.fade-leave-to {
+
+.fade2-enter-active {
+  transition-delay: 0.25s;
+  will-change: transform;
+}
+
+.fade2-enter,
+.fade2-leave-active {
   opacity: 0;
 }
 </style>
