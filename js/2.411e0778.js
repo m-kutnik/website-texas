@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([[2],{Svoe:function(n,t,e){"use strict";e.r(t);var a=function(){var n=this,t=n.$createElement,e=n._self._c||t;return e("section",[e("transition",{attrs:{name:"fade2"}},[e("router-view")],1)],1)},o=[],r=(e("VRzm"),{name:"AppContent"}),i=r,s=(e("k7w8"),e("KHd+")),c=Object(s["a"])(i,a,o,!1,null,"63721670",null);t["default"]=c.exports},k7w8:function(n,t,e){"use strict";var a=e("yXIX"),o=e.n(a);o.a},yXIX:function(n,t,e){}}]);
-//# sourceMappingURL=2.411e0778.js.map
